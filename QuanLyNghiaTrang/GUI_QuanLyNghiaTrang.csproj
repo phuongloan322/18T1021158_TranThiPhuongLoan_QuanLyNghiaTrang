@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8033FC15-905F-4BEC-B966-44A1D59D4379}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyNghiaTrang</RootNamespace>
+    <AssemblyName>QuanLyNghiaTrang</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EasyEncryption, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EasyEncryption.1.0.2\lib\EasyEncryption.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrystalReportLietSi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportLietSi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportPhanMo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportPhanMo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI_Ablum Anh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Ablum Anh.Designer.cs">
+      <DependentUpon>GUI_Ablum Anh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_DangKy.Designer.cs">
+      <DependentUpon>GUI_DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DanhSachLietSi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_DanhSachLietSi.Designer.cs">
+      <DependentUpon>GUI_DanhSachLietSi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Home.Designer.cs">
+      <DependentUpon>GUI_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Login.Designer.cs">
+      <DependentUpon>GUI_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Main.Designer.cs">
+      <DependentUpon>GUI_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_QuanLyPhanMo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLyPhanMo.Designer.cs">
+      <DependentUpon>GUI_QuanLyPhanMo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_ThemLietSi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_ThemLietSi.Designer.cs">
+      <DependentUpon>GUI_ThemLietSi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="viewReportLietSi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewReportLietSi.Designer.cs">
+      <DependentUpon>viewReportLietSi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewReportPhanMo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewReportPhanMo.Designer.cs">
+      <DependentUpon>viewReportPhanMo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CrystalReportLietSi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportLietSi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportPhanMo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportPhanMo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Ablum Anh.resx">
+      <DependentUpon>GUI_Ablum Anh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DangKy.resx">
+      <DependentUpon>GUI_DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DanhSachLietSi.resx">
+      <DependentUpon>GUI_DanhSachLietSi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Home.resx">
+      <DependentUpon>GUI_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Login.resx">
+      <DependentUpon>GUI_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Main.resx">
+      <DependentUpon>GUI_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_QuanLyPhanMo.resx">
+      <DependentUpon>GUI_QuanLyPhanMo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_ThemLietSi.resx">
+      <DependentUpon>GUI_ThemLietSi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewReportLietSi.resx">
+      <DependentUpon>viewReportLietSi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewReportPhanMo.resx">
+      <DependentUpon>viewReportPhanMo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS_QuanLyNghiaTrang\BUS_QuanLyNghiaTrang.csproj">
+      <Project>{d8bde2b0-eeb1-4492-af54-2d6c1ac158d2}</Project>
+      <Name>BUS_QuanLyNghiaTrang</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_QuanLyNghiaTrang\DTO_QuanLyNghiaTrang.csproj">
+      <Project>{0822ae1a-e051-41f0-9306-aaa1ec77fdb5}</Project>
+      <Name>DTO_QuanLyNghiaTrang</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bando.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-of-two-clockwise-arrows-rotation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,9 @@
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\DAL_QuanLyNghiaTrang\bin\Debug\DAL_QuanLyNghiaTrang.dll
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\DAL_QuanLyNghiaTrang\bin\Debug\DAL_QuanLyNghiaTrang.pdb
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\DAL_QuanLyNghiaTrang\bin\Debug\DTO_QuanLyNghiaTrang.dll
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\DAL_QuanLyNghiaTrang\bin\Debug\DTO_QuanLyNghiaTrang.pdb
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\DAL_QuanLyNghiaTrang\obj\Debug\DAL_QuanLyNghiaTrang.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\DAL_QuanLyNghiaTrang\obj\Debug\DAL_QuanLyNghiaTrang.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\DAL_QuanLyNghiaTrang\obj\Debug\DAL_QuanLyNghiaTrang.csproj.CopyComplete
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\DAL_QuanLyNghiaTrang\obj\Debug\DAL_QuanLyNghiaTrang.dll
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\DAL_QuanLyNghiaTrang\obj\Debug\DAL_QuanLyNghiaTrang.pdb

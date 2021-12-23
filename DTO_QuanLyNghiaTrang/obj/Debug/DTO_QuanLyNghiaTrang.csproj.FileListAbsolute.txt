@@ -1,0 +1,6 @@
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\DTO_QuanLyNghiaTrang\bin\Debug\DTO_QuanLyNghiaTrang.dll
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\DTO_QuanLyNghiaTrang\bin\Debug\DTO_QuanLyNghiaTrang.pdb
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\DTO_QuanLyNghiaTrang\obj\Debug\DTO_QuanLyNghiaTrang.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\DTO_QuanLyNghiaTrang\obj\Debug\DTO_QuanLyNghiaTrang.dll
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\DTO_QuanLyNghiaTrang\obj\Debug\DTO_QuanLyNghiaTrang.pdb
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\DTO_QuanLyNghiaTrang\obj\Debug\DTO_QuanLyNghiaTrang.csproj.AssemblyReference.cache

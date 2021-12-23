@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\BUS_QuanLyNghiaTrang\bin\Debug\BUS_QuanLyNghiaTrang.dll
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\BUS_QuanLyNghiaTrang\bin\Debug\BUS_QuanLyNghiaTrang.pdb
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\BUS_QuanLyNghiaTrang\bin\Debug\DAL_QuanLyNghiaTrang.dll
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\BUS_QuanLyNghiaTrang\bin\Debug\DTO_QuanLyNghiaTrang.dll
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\BUS_QuanLyNghiaTrang\bin\Debug\DAL_QuanLyNghiaTrang.pdb
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\BUS_QuanLyNghiaTrang\bin\Debug\DTO_QuanLyNghiaTrang.pdb
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\BUS_QuanLyNghiaTrang\obj\Debug\BUS_QuanLyNghiaTrang.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\BUS_QuanLyNghiaTrang\obj\Debug\BUS_QuanLyNghiaTrang.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\BUS_QuanLyNghiaTrang\obj\Debug\BUS_QuanLyNghiaTrang.csproj.CopyComplete
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\BUS_QuanLyNghiaTrang\obj\Debug\BUS_QuanLyNghiaTrang.dll
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\BUS_QuanLyNghiaTrang\obj\Debug\BUS_QuanLyNghiaTrang.pdb
