@@ -29,7 +29,7 @@ namespace QuanLyNghiaTrang
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -122,15 +122,15 @@ namespace QuanLyNghiaTrang
             // 
             this.panel8.Controls.Add(this.dgvLietSi);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(446, 0);
+            this.panel8.Location = new System.Drawing.Point(451, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1020, 584);
+            this.panel8.Size = new System.Drawing.Size(1015, 584);
             this.panel8.TabIndex = 3;
             // 
             // dgvLietSi
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Honeydew;
-            this.dgvLietSi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Honeydew;
+            this.dgvLietSi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvLietSi.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvLietSi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLietSi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -155,7 +155,7 @@ namespace QuanLyNghiaTrang
             this.dgvLietSi.RowHeadersVisible = false;
             this.dgvLietSi.RowHeadersWidth = 51;
             this.dgvLietSi.RowTemplate.Height = 32;
-            this.dgvLietSi.Size = new System.Drawing.Size(1020, 584);
+            this.dgvLietSi.Size = new System.Drawing.Size(1015, 584);
             this.dgvLietSi.TabIndex = 0;
             this.dgvLietSi.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLietSi_CellValueChanged);
             this.dgvLietSi.Click += new System.EventHandler(this.dgvLietSi_Click);
@@ -366,17 +366,15 @@ namespace QuanLyNghiaTrang
             this.pnlTT.Enabled = false;
             this.pnlTT.Location = new System.Drawing.Point(0, 0);
             this.pnlTT.Name = "pnlTT";
-            this.pnlTT.Size = new System.Drawing.Size(446, 584);
+            this.pnlTT.Size = new System.Drawing.Size(451, 584);
             this.pnlTT.TabIndex = 1;
             // 
             // cmbViTriMo
             // 
-            this.cmbViTriMo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbViTriMo.FormattingEnabled = true;
             this.cmbViTriMo.Location = new System.Drawing.Point(110, 450);
             this.cmbViTriMo.Name = "cmbViTriMo";
-            this.cmbViTriMo.Size = new System.Drawing.Size(0, 25);
+            this.cmbViTriMo.Size = new System.Drawing.Size(311, 24);
             this.cmbViTriMo.TabIndex = 33;
             // 
             // label10
@@ -392,12 +390,10 @@ namespace QuanLyNghiaTrang
             // 
             // txtQueQuan
             // 
-            this.txtQueQuan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtQueQuan.Location = new System.Drawing.Point(110, 125);
             this.txtQueQuan.Multiline = true;
             this.txtQueQuan.Name = "txtQueQuan";
-            this.txtQueQuan.Size = new System.Drawing.Size(0, 34);
+            this.txtQueQuan.Size = new System.Drawing.Size(311, 34);
             this.txtQueQuan.TabIndex = 32;
             // 
             // label9
@@ -413,12 +409,10 @@ namespace QuanLyNghiaTrang
             // 
             // txtDonVi
             // 
-            this.txtDonVi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDonVi.Location = new System.Drawing.Point(110, 344);
             this.txtDonVi.Multiline = true;
             this.txtDonVi.Name = "txtDonVi";
-            this.txtDonVi.Size = new System.Drawing.Size(0, 34);
+            this.txtDonVi.Size = new System.Drawing.Size(311, 34);
             this.txtDonVi.TabIndex = 30;
             // 
             // label8
@@ -434,12 +428,10 @@ namespace QuanLyNghiaTrang
             // 
             // txtChucVu
             // 
-            this.txtChucVu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtChucVu.Location = new System.Drawing.Point(110, 289);
             this.txtChucVu.Multiline = true;
             this.txtChucVu.Name = "txtChucVu";
-            this.txtChucVu.Size = new System.Drawing.Size(0, 34);
+            this.txtChucVu.Size = new System.Drawing.Size(311, 34);
             this.txtChucVu.TabIndex = 28;
             // 
             // label7
@@ -455,12 +447,10 @@ namespace QuanLyNghiaTrang
             // 
             // txtTTNamHySinh
             // 
-            this.txtTTNamHySinh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTTNamHySinh.Location = new System.Drawing.Point(110, 235);
             this.txtTTNamHySinh.Multiline = true;
             this.txtTTNamHySinh.Name = "txtTTNamHySinh";
-            this.txtTTNamHySinh.Size = new System.Drawing.Size(0, 34);
+            this.txtTTNamHySinh.Size = new System.Drawing.Size(311, 34);
             this.txtTTNamHySinh.TabIndex = 26;
             // 
             // label6
@@ -476,12 +466,10 @@ namespace QuanLyNghiaTrang
             // 
             // txtTTNamSinh
             // 
-            this.txtTTNamSinh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTTNamSinh.Location = new System.Drawing.Point(110, 179);
             this.txtTTNamSinh.Multiline = true;
             this.txtTTNamSinh.Name = "txtTTNamSinh";
-            this.txtTTNamSinh.Size = new System.Drawing.Size(0, 34);
+            this.txtTTNamSinh.Size = new System.Drawing.Size(311, 34);
             this.txtTTNamSinh.TabIndex = 24;
             // 
             // label5
@@ -501,7 +489,7 @@ namespace QuanLyNghiaTrang
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 85);
+            this.label2.Location = new System.Drawing.Point(9, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 17);
             this.label2.TabIndex = 14;
@@ -516,9 +504,9 @@ namespace QuanLyNghiaTrang
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLuu.Location = new System.Drawing.Point(295, 510);
+            this.btnLuu.Location = new System.Drawing.Point(298, 508);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(0, 46);
+            this.btnLuu.Size = new System.Drawing.Size(123, 46);
             this.btnLuu.TabIndex = 20;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = false;
@@ -526,22 +514,18 @@ namespace QuanLyNghiaTrang
             // 
             // cmbQuyTap
             // 
-            this.cmbQuyTap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbQuyTap.FormattingEnabled = true;
             this.cmbQuyTap.Location = new System.Drawing.Point(110, 401);
             this.cmbQuyTap.Name = "cmbQuyTap";
-            this.cmbQuyTap.Size = new System.Drawing.Size(0, 25);
+            this.cmbQuyTap.Size = new System.Drawing.Size(311, 24);
             this.cmbQuyTap.TabIndex = 21;
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHoTen.Location = new System.Drawing.Point(110, 73);
             this.txtHoTen.Multiline = true;
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(0, 34);
+            this.txtHoTen.Size = new System.Drawing.Size(311, 34);
             this.txtHoTen.TabIndex = 15;
             // 
             // label3
