@@ -22,6 +22,11 @@ namespace QuanLyNghiaTrang
             InitializeComponent();
             lblNotification.Text = "";
         }
+
+        public void Reset()
+        {
+            txtTaiKhoan.Text = txtMatKhau.Text = lblNotification.Text = "";
+        }
         
 
         private void btnDangNhap_Click(object sender, EventArgs e)
@@ -46,7 +51,8 @@ namespace QuanLyNghiaTrang
 
                 else if (password == passwordHash)
                 {
-                    GUI_Main frm = new GUI_Main();
+                    Reset();
+                    GUI_Main frm = new GUI_Main(taiKhoan.MaTaiKhoan);
                     this.Hide();
                     frm.ShowDialog();
                     this.Show();

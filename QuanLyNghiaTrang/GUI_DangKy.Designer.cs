@@ -46,9 +46,9 @@ namespace QuanLyNghiaTrang
             this.lblTK = new System.Windows.Forms.Label();
             this.lblNotification = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblDangNhap = new System.Windows.Forms.Label();
             this.btnDangKy = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblDangNhap = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -113,6 +113,7 @@ namespace QuanLyNghiaTrang
             this.txtMatKhau.Location = new System.Drawing.Point(0, 42);
             this.txtMatKhau.Multiline = true;
             this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
             this.txtMatKhau.Size = new System.Drawing.Size(619, 58);
             this.txtMatKhau.TabIndex = 1;
             // 
@@ -171,6 +172,7 @@ namespace QuanLyNghiaTrang
             this.txtMatKhauRep.Location = new System.Drawing.Point(0, 42);
             this.txtMatKhauRep.Multiline = true;
             this.txtMatKhauRep.Name = "txtMatKhauRep";
+            this.txtMatKhauRep.PasswordChar = '*';
             this.txtMatKhauRep.Size = new System.Drawing.Size(619, 58);
             this.txtMatKhauRep.TabIndex = 1;
             // 
@@ -237,6 +239,17 @@ namespace QuanLyNghiaTrang
             this.panel3.Size = new System.Drawing.Size(788, 150);
             this.panel3.TabIndex = 2;
             // 
+            // lblDangNhap
+            // 
+            this.lblDangNhap.AutoSize = true;
+            this.lblDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDangNhap.Location = new System.Drawing.Point(297, 95);
+            this.lblDangNhap.Name = "lblDangNhap";
+            this.lblDangNhap.Size = new System.Drawing.Size(191, 26);
+            this.lblDangNhap.TabIndex = 1;
+            this.lblDangNhap.Text = "Đã có tài khoản?";
+            this.lblDangNhap.Click += new System.EventHandler(this.lblDangNhap_Click);
+            // 
             // btnDangKy
             // 
             this.btnDangKy.BackColor = System.Drawing.Color.SeaGreen;
@@ -265,17 +278,6 @@ namespace QuanLyNghiaTrang
             this.label1.TabIndex = 1;
             this.label1.Text = "ĐĂNG KÝ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblDangNhap
-            // 
-            this.lblDangNhap.AutoSize = true;
-            this.lblDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDangNhap.Location = new System.Drawing.Point(297, 95);
-            this.lblDangNhap.Name = "lblDangNhap";
-            this.lblDangNhap.Size = new System.Drawing.Size(191, 26);
-            this.lblDangNhap.TabIndex = 1;
-            this.lblDangNhap.Text = "Đã có tài khoản?";
-            this.lblDangNhap.Click += new System.EventHandler(this.lblDangNhap_Click);
             // 
             // GUI_DangKy
             // 

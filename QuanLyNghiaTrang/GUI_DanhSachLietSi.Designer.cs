@@ -73,6 +73,7 @@ namespace QuanLyNghiaTrang
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblSearch = new System.Windows.Forms.Label();
             this.lblMa = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtViTriMo = new System.Windows.Forms.TextBox();
@@ -84,7 +85,6 @@ namespace QuanLyNghiaTrang
             this.txtHoVaTen = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblSearch = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -130,7 +130,6 @@ namespace QuanLyNghiaTrang
             // dgvLietSi
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Honeydew;
             this.dgvLietSi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvLietSi.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvLietSi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -377,7 +376,7 @@ namespace QuanLyNghiaTrang
             this.cmbViTriMo.FormattingEnabled = true;
             this.cmbViTriMo.Location = new System.Drawing.Point(110, 450);
             this.cmbViTriMo.Name = "cmbViTriMo";
-            this.cmbViTriMo.Size = new System.Drawing.Size(293, 24);
+            this.cmbViTriMo.Size = new System.Drawing.Size(0, 25);
             this.cmbViTriMo.TabIndex = 33;
             // 
             // label10
@@ -398,7 +397,7 @@ namespace QuanLyNghiaTrang
             this.txtQueQuan.Location = new System.Drawing.Point(110, 125);
             this.txtQueQuan.Multiline = true;
             this.txtQueQuan.Name = "txtQueQuan";
-            this.txtQueQuan.Size = new System.Drawing.Size(293, 34);
+            this.txtQueQuan.Size = new System.Drawing.Size(0, 34);
             this.txtQueQuan.TabIndex = 32;
             // 
             // label9
@@ -419,7 +418,7 @@ namespace QuanLyNghiaTrang
             this.txtDonVi.Location = new System.Drawing.Point(110, 344);
             this.txtDonVi.Multiline = true;
             this.txtDonVi.Name = "txtDonVi";
-            this.txtDonVi.Size = new System.Drawing.Size(293, 34);
+            this.txtDonVi.Size = new System.Drawing.Size(0, 34);
             this.txtDonVi.TabIndex = 30;
             // 
             // label8
@@ -440,7 +439,7 @@ namespace QuanLyNghiaTrang
             this.txtChucVu.Location = new System.Drawing.Point(110, 289);
             this.txtChucVu.Multiline = true;
             this.txtChucVu.Name = "txtChucVu";
-            this.txtChucVu.Size = new System.Drawing.Size(293, 34);
+            this.txtChucVu.Size = new System.Drawing.Size(0, 34);
             this.txtChucVu.TabIndex = 28;
             // 
             // label7
@@ -461,7 +460,7 @@ namespace QuanLyNghiaTrang
             this.txtTTNamHySinh.Location = new System.Drawing.Point(110, 235);
             this.txtTTNamHySinh.Multiline = true;
             this.txtTTNamHySinh.Name = "txtTTNamHySinh";
-            this.txtTTNamHySinh.Size = new System.Drawing.Size(293, 34);
+            this.txtTTNamHySinh.Size = new System.Drawing.Size(0, 34);
             this.txtTTNamHySinh.TabIndex = 26;
             // 
             // label6
@@ -482,7 +481,7 @@ namespace QuanLyNghiaTrang
             this.txtTTNamSinh.Location = new System.Drawing.Point(110, 179);
             this.txtTTNamSinh.Multiline = true;
             this.txtTTNamSinh.Name = "txtTTNamSinh";
-            this.txtTTNamSinh.Size = new System.Drawing.Size(293, 34);
+            this.txtTTNamSinh.Size = new System.Drawing.Size(0, 34);
             this.txtTTNamSinh.TabIndex = 24;
             // 
             // label5
@@ -519,7 +518,7 @@ namespace QuanLyNghiaTrang
             this.btnLuu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnLuu.Location = new System.Drawing.Point(295, 510);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(108, 46);
+            this.btnLuu.Size = new System.Drawing.Size(0, 46);
             this.btnLuu.TabIndex = 20;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = false;
@@ -532,7 +531,7 @@ namespace QuanLyNghiaTrang
             this.cmbQuyTap.FormattingEnabled = true;
             this.cmbQuyTap.Location = new System.Drawing.Point(110, 401);
             this.cmbQuyTap.Name = "cmbQuyTap";
-            this.cmbQuyTap.Size = new System.Drawing.Size(293, 24);
+            this.cmbQuyTap.Size = new System.Drawing.Size(0, 25);
             this.cmbQuyTap.TabIndex = 21;
             // 
             // txtHoTen
@@ -542,7 +541,7 @@ namespace QuanLyNghiaTrang
             this.txtHoTen.Location = new System.Drawing.Point(110, 73);
             this.txtHoTen.Multiline = true;
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(293, 34);
+            this.txtHoTen.Size = new System.Drawing.Size(0, 34);
             this.txtHoTen.TabIndex = 15;
             // 
             // label3
@@ -576,6 +575,17 @@ namespace QuanLyNghiaTrang
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1543, 58);
             this.panel3.TabIndex = 1;
+            // 
+            // lblSearch
+            // 
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSearch.Location = new System.Drawing.Point(446, 18);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(69, 20);
+            this.lblSearch.TabIndex = 11;
+            this.lblSearch.Text = "label11";
+            this.lblSearch.Visible = false;
             // 
             // lblMa
             // 
@@ -701,17 +711,6 @@ namespace QuanLyNghiaTrang
             this.label1.Size = new System.Drawing.Size(176, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Thông tin tìm kiếm:";
-            // 
-            // lblSearch
-            // 
-            this.lblSearch.AutoSize = true;
-            this.lblSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSearch.Location = new System.Drawing.Point(446, 18);
-            this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(69, 20);
-            this.lblSearch.TabIndex = 11;
-            this.lblSearch.Text = "label11";
-            this.lblSearch.Visible = false;
             // 
             // GUI_DanhSachLietSi
             // 

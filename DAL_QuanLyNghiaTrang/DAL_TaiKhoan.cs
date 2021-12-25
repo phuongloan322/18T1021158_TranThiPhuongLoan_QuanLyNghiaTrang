@@ -52,5 +52,47 @@ namespace DAL_QuanLyNghiaTrang
 
             return (int)res[0];
         }
+
+
+        public TaiKhoan GetTaiKhoan(long MaTaiKhoan)
+        {
+            try
+            {
+                string sql = string.Format("select * from TaiKhoan where MaTaiKhoan = '{0}'", MaTaiKhoan);
+                TaiKhoan taiKhoan = null;
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                DataTable dataTable = new DataTable();
+                da.Fill(dataTable);
+                DataRowCollection dataRowCollection = dataTable.Rows;
+                foreach (DataRow dataRow in dataRowCollection)
+                {
+
+                    taiKhoan = new TaiKhoan(long.Parse(dataRow[0].ToString()),
+                                                         dataRow[1].ToString(),
+                                                         dataRow[2].ToString(),
+                                                         dataRow[3].ToString(),
+                                                         int.Parse(dataRow[4].ToString()));
+                }
+                return taiKhoan;
+            }
+            catch
+            {
+                con.Close();
+                return null;
+            }
+        }
+
+        public int QuanLyTaiKhoan(TaiKhoan taiKhoan)
+        {
+            string sql = "EXEC proc_TK_QuanLyTaiKhoan @HoVaTen, @TenDangNhap, @MatKhau, @Result OUT";
+            SqlParam[] input = { new SqlParam("@HoVaTen", taiKhoan.HoVaTen),
+                                new SqlParam("@TenDangNhap", taiKhoan.TenDangNhap),
+                                new SqlParam("@MatKhau", taiKhoan.MatKhau)};
+            SqlParam[] output = { new SqlParam("@Result", 0) };
+
+            object[] res = excuteProc(sql, input, output);
+
+            return (int)res[0];
+        }
     }
 }

@@ -24,29 +24,31 @@ namespace QuanLyNghiaTrang
             this.WindowState = FormWindowState.Maximized;
             LoadData("");
             tf = tf1 = true;
-            Lock_unLock(tf);
-            Lock_unLock1(tf1);
+            Lock();
             dgvPhanMo.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(187)))), ((int)(((byte)(153)))));
             dgvPhanMo.EnableHeadersVisualStyles = false;
             dgvPhanMo.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dgvPhanMo.ColumnHeadersHeight = 60;
         }
-
-        void Lock_unLock(bool tf)
+        void Lock()
         {
-            btnLuu.Visible = tf;
-            btnThem.Visible = !tf;
-            btnNew.Enabled = tf;
-            btnThem.Enabled = txtMaPhanMo.Enabled = txtSoLo.Enabled = txtSoHang.Enabled = txtSoMo.Enabled = cmbTinhTrang.Enabled = !tf;
+            btnLuu.Visible = btnXem.Visible = btnThem.Visible =  false;
+            txtMaPhanMo.Enabled = txtSoLo.Enabled = txtSoHang.Enabled = txtSoMo.Enabled = cmbTinhTrang.Enabled = false;
+            tf = tf1 = true;
+
+        }
+        void unLockAdd()
+        {
+            btnThem.Visible = true;
+            txtMaPhanMo.Enabled = txtSoLo.Enabled = txtSoHang.Enabled = txtSoMo.Enabled = cmbTinhTrang.Enabled = true;
+            btnLuu.Visible = false;
         }
 
-        void Lock_unLock1(bool tf1)
+        void unLockEdit()
         {
-            dgvPhanMo.Enabled = tf1;
-            btnLuu.Visible = !tf1;
-            btnThem.Visible = tf1;
-            btnLuu.Enabled = btnXoa.Enabled = txtMaPhanMo.Enabled = txtSoLo.Enabled = txtSoHang.Enabled = txtSoMo.Enabled = cmbTinhTrang.Enabled = !tf1;
-            btnXem.Visible = !tf1;
+            btnLuu.Visible = true;
+            txtMaPhanMo.Enabled = txtSoLo.Enabled = txtSoHang.Enabled = txtSoMo.Enabled = cmbTinhTrang.Enabled = true;
+            btnThem.Visible = false;
         }
 
         private void LoadData(string search)
@@ -60,9 +62,7 @@ namespace QuanLyNghiaTrang
             if (rs == 0)
             {
                 MessageBox.Show("Xóa phần mộ thành công", "Info");
-                LoadData("");
-                tf1 = !tf1;
-                Lock_unLock1(tf1);
+                Reset();
             }
             else
             {
@@ -96,9 +96,8 @@ namespace QuanLyNghiaTrang
                         if (rs == 0)
                         {
                             MessageBox.Show("Chỉnh sửa phần mộ thành công!", "Info");
-                            LoadData("");
-                            tf1 = !tf1;
-                            Lock_unLock1(tf1);
+                            Reset();
+                            
                         }
                         else
                         {
@@ -122,9 +121,7 @@ namespace QuanLyNghiaTrang
                             if (rs == 0)
                             {
                                 MessageBox.Show("Chỉnh sửa phần mộ thành công!", "Info");
-                                LoadData("");
-                                tf1 = !tf1;
-                                Lock_unLock1(tf1);
+                                Reset();
                             }
                             else
                             {
@@ -135,6 +132,7 @@ namespace QuanLyNghiaTrang
                     else
                     {
                         MessageBox.Show("Phần mộ này đã tồn tại! \n Vui lòng thực hiện lại", "Info");
+                        Reset();
                     }
                 }
 
@@ -162,9 +160,7 @@ namespace QuanLyNghiaTrang
                     if (rs == 0)
                     {
                         MessageBox.Show("Thêm phần mộ thành công!", "Info");
-                        LoadData("");
-                        tf = !tf;
-                        Lock_unLock(tf);
+                        Reset();
                     }
                     else
                     {
@@ -228,11 +224,11 @@ namespace QuanLyNghiaTrang
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            if (tf1)
+            if (tf)
             {
-                tf = !tf;
-                Lock_unLock(tf);
-                txtMaPhanMo.Text = txtSoLo.Text = txtSoHang.Text = txtSoMo.Text = cmbTinhTrang.Text = "";
+                tf1 = false;
+                unLockAdd();
+                txtMaPhanMo.Text = txtSoLo.Text = txtSoHang.Text = txtSoMo.Text = "";
             }
             else
             {
@@ -259,10 +255,10 @@ namespace QuanLyNghiaTrang
 
         private void Reset()
         {
-            tf = tf1 = true;
-            Lock_unLock(tf);
-            Lock_unLock1(tf1);
+            tf = true;
+            Lock();
             LoadData("");
+            txtMaPhanMo.Text = txtSoHang.Text = txtSoLo.Text = txtSoMo.Text = txtSearch.Text = "";
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -272,7 +268,7 @@ namespace QuanLyNghiaTrang
 
         private void dgvPhanMo_Click(object sender, EventArgs e)
         {
-            if (dgvPhanMo.Enabled)
+            if (tf1)
             {
                 int i = dgvPhanMo.CurrentRow.Index;
                 maPhanMo = dgvPhanMo[0, i].Value.ToString();
@@ -281,9 +277,16 @@ namespace QuanLyNghiaTrang
                 sohang = txtSoHang.Text = dgvPhanMo[2, i].Value.ToString();
                 somo = txtSoMo.Text = dgvPhanMo[3, i].Value.ToString();
                 tinhtrang = cmbTinhTrang.Text = dgvPhanMo[4, i].Value.ToString();
-                tf1 = !tf1;
-                Lock_unLock1(tf1);
-                
+                tf = false;
+                unLockEdit();
+                if(tinhtrang == "Đã sử dụng")
+                {
+                    btnXem.Visible = true;
+                }
+                else
+                {
+                    btnXem.Visible = false;
+                }
             }
             else
             {

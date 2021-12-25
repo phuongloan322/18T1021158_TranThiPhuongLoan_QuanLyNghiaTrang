@@ -44,3 +44,5 @@ C:\Users\Admin\source\repos\QuanLyNghiaTrang\QuanLyNghiaTrang\obj\Debug\QuanLyNg
 C:\Users\Admin\source\repos\QuanLyNghiaTrang\QuanLyNghiaTrang\obj\Debug\QuanLyNghiaTrang.GUI_Ablum_Anh.resources
 C:\Users\Admin\source\repos\QuanLyNghiaTrang\QuanLyNghiaTrang\bin\Debug\EasyEncryption.dll
 C:\Users\Admin\source\repos\QuanLyNghiaTrang\QuanLyNghiaTrang\obj\Debug\QuanLyNghiaTrang.GUI_DangKy.resources
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\QuanLyNghiaTrang\obj\Debug\QuanLyNghiaTrang.GUI_QuanLyGopY.resources
+C:\Users\Admin\source\repos\QuanLyNghiaTrang\QuanLyNghiaTrang\obj\Debug\QuanLyNghiaTrang.GUI_QuanLyTaiKhoan.resources

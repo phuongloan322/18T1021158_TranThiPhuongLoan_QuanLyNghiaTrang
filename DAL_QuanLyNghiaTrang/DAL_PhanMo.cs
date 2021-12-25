@@ -58,7 +58,12 @@ namespace DAL_QuanLyNghiaTrang
             SqlDataAdapter da = new SqlDataAdapter("select * from QuanLyPhanMo where SoLo = '" + SoLo + "' and SoHang = '" + SoHang + "' and SoMo = '" + SoMo + "'", con);
             DataTable daStudent = new DataTable();
             da.Fill(daStudent);
-            return long.Parse(daStudent.Rows[0][0].ToString());
+            if (daStudent.Rows.Count == 0)
+            {
+                return 0;
+            }
+            else return long.Parse(daStudent.Rows[0][0].ToString());
+
         }
 
         public bool KiemTraPhanMoLietSi(int SoLo, int SoHang, int SoMo)

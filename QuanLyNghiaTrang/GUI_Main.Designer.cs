@@ -36,8 +36,13 @@ namespace QuanLyNghiaTrang
             this.btnPhanMo = new System.Windows.Forms.Button();
             this.btnDanhSachLietSi = new System.Windows.Forms.Button();
             this.btnTrangChu = new System.Windows.Forms.Button();
+            this.btnGopY = new System.Windows.Forms.Button();
+            this.btnTaiKhoan = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTaiKhoan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,6 +69,9 @@ namespace QuanLyNghiaTrang
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.btnTaiKhoan);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.btnGopY);
             this.panel2.Controls.Add(this.btnAlbumAnh);
             this.panel2.Controls.Add(this.btnPhanMo);
             this.panel2.Controls.Add(this.btnDanhSachLietSi);
@@ -138,6 +146,44 @@ namespace QuanLyNghiaTrang
             this.btnTrangChu.UseVisualStyleBackColor = true;
             this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
             // 
+            // btnGopY
+            // 
+            this.btnGopY.AllowDrop = true;
+            this.btnGopY.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnGopY.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGopY.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGopY.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGopY.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnGopY.Location = new System.Drawing.Point(837, 0);
+            this.btnGopY.Name = "btnGopY";
+            this.btnGopY.Size = new System.Drawing.Size(217, 64);
+            this.btnGopY.TabIndex = 5;
+            this.btnGopY.Text = "QUẢN LÝ THÔNG TIN GÓP Ý";
+            this.btnGopY.UseVisualStyleBackColor = true;
+            this.btnGopY.Click += new System.EventHandler(this.btnGopY_Click);
+            // 
+            // btnTaiKhoan
+            // 
+            this.btnTaiKhoan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTaiKhoan.Image = global::QuanLyNghiaTrang.Properties.Resources.user__1_;
+            this.btnTaiKhoan.Location = new System.Drawing.Point(1571, 15);
+            this.btnTaiKhoan.Name = "btnTaiKhoan";
+            this.btnTaiKhoan.Size = new System.Drawing.Size(57, 44);
+            this.btnTaiKhoan.TabIndex = 7;
+            this.btnTaiKhoan.TabStop = false;
+            this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::QuanLyNghiaTrang.Properties.Resources.exit__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(1634, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(57, 44);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // GUI_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -149,6 +195,8 @@ namespace QuanLyNghiaTrang
             this.Load += new System.EventHandler(this.GUI_Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnTaiKhoan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -162,6 +210,9 @@ namespace QuanLyNghiaTrang
         private System.Windows.Forms.Button btnTrangChu;
         private System.Windows.Forms.Panel pnlView;
         private System.Windows.Forms.Button btnAlbumAnh;
+        private System.Windows.Forms.Button btnGopY;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox btnTaiKhoan;
     }
 }
 

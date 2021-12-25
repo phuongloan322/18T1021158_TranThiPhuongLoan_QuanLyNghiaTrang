@@ -14,11 +14,13 @@ namespace QuanLyNghiaTrang
 
     public partial class GUI_Main : Form
     {
+        long MaTaiKhoan;
 
         bool tf1, tf2, tf3;
-        public GUI_Main()
+        public GUI_Main(long maTaiKhoan)
         {
             InitializeComponent();
+            MaTaiKhoan = maTaiKhoan;
         }
 
         private void Reset()
@@ -56,7 +58,7 @@ namespace QuanLyNghiaTrang
         private void btnPhanMo_Click(object sender, EventArgs e)
         {
             setColor(btnPhanMo);
-            unsetColor(btnDanhSachLietSi);unsetColor(btnTrangChu); unsetColor(btnAlbumAnh);
+            unsetColor(btnDanhSachLietSi);unsetColor(btnTrangChu); unsetColor(btnAlbumAnh); unsetColor(btnGopY);
             GUI_QuanLyPhanMo guiPhanMo = new GUI_QuanLyPhanMo();
             guiPhanMo.TopLevel = false;
             pnlView.Controls.Add(guiPhanMo);
@@ -67,7 +69,7 @@ namespace QuanLyNghiaTrang
         private void btnAlbumAnh_Click(object sender, EventArgs e)
         {
             setColor(btnAlbumAnh);
-            unsetColor(btnDanhSachLietSi); unsetColor(btnPhanMo); unsetColor(btnTrangChu);
+            unsetColor(btnDanhSachLietSi); unsetColor(btnPhanMo); unsetColor(btnTrangChu); unsetColor(btnGopY);
             GUI_Ablum_Anh guiAlbumAnh = new GUI_Ablum_Anh();
             guiAlbumAnh.TopLevel = false;
             pnlView.Controls.Add(guiAlbumAnh);
@@ -75,10 +77,36 @@ namespace QuanLyNghiaTrang
             guiAlbumAnh.Show();
         }
 
+        private void btnGopY_Click(object sender, EventArgs e)
+        {
+            setColor(btnGopY);
+            unsetColor(btnDanhSachLietSi); unsetColor(btnPhanMo); unsetColor(btnTrangChu); unsetColor(btnAlbumAnh);
+            GUI_QuanLyGopY guiGopY = new GUI_QuanLyGopY();
+            guiGopY.TopLevel = false;
+            pnlView.Controls.Add(guiGopY);
+            pnlView.Dock = DockStyle.Fill;
+            guiGopY.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnTaiKhoan_Click(object sender, EventArgs e)
+        {
+            unsetColor(btnTrangChu); unsetColor(btnDanhSachLietSi); unsetColor(btnPhanMo); unsetColor(btnAlbumAnh); unsetColor(btnGopY);
+            GUI_QuanLyTaiKhoan guiQuanLyTaiKhoan = new GUI_QuanLyTaiKhoan(MaTaiKhoan);
+            guiQuanLyTaiKhoan.TopLevel = false;
+            pnlView.Controls.Add(guiQuanLyTaiKhoan);
+            pnlView.Dock = DockStyle.Fill;
+            guiQuanLyTaiKhoan.Show();
+        }
+
         private void btnTrangChu_Click(object sender, EventArgs e)
         {
             setColor(btnTrangChu);
-            unsetColor(btnDanhSachLietSi); unsetColor(btnPhanMo); unsetColor(btnAlbumAnh);
+            unsetColor(btnDanhSachLietSi); unsetColor(btnPhanMo); unsetColor(btnAlbumAnh); unsetColor(btnGopY);
             GUI_Home gui_home = new GUI_Home();
             gui_home.TopLevel = false;
             pnlView.Controls.Add(gui_home);
@@ -90,7 +118,7 @@ namespace QuanLyNghiaTrang
         private void btnDanhSachLietSi_Click(object sender, EventArgs e)
         {
             setColor(btnDanhSachLietSi);
-            unsetColor(btnPhanMo); unsetColor(btnTrangChu); unsetColor(btnAlbumAnh);
+            unsetColor(btnPhanMo); unsetColor(btnTrangChu); unsetColor(btnAlbumAnh); unsetColor(btnGopY);
             GUI_DanhSachLietSi guiLietSi = new GUI_DanhSachLietSi();
             guiLietSi.TopLevel = false;
             pnlView.Controls.Add(guiLietSi);

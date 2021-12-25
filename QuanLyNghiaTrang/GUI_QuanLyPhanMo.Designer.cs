@@ -29,9 +29,10 @@ namespace QuanLyNghiaTrang
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pnlTT = new System.Windows.Forms.Panel();
+            this.btnXem = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
@@ -64,12 +65,11 @@ namespace QuanLyNghiaTrang
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblSearch = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnXem = new System.Windows.Forms.Button();
-            this.lblSearch = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
             this.pnlTT.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -98,7 +98,6 @@ namespace QuanLyNghiaTrang
             this.pnlTT.Controls.Add(this.btnXem);
             this.pnlTT.Controls.Add(this.label5);
             this.pnlTT.Controls.Add(this.btnThem);
-            this.pnlTT.Controls.Add(this.btnNew);
             this.pnlTT.Controls.Add(this.label2);
             this.pnlTT.Controls.Add(this.btnLuu);
             this.pnlTT.Controls.Add(this.cmbTinhTrang);
@@ -111,6 +110,24 @@ namespace QuanLyNghiaTrang
             this.pnlTT.Name = "pnlTT";
             this.pnlTT.Size = new System.Drawing.Size(506, 662);
             this.pnlTT.TabIndex = 3;
+            // 
+            // btnXem
+            // 
+            this.btnXem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnXem.BackColor = System.Drawing.Color.Green;
+            this.btnXem.FlatAppearance.BorderSize = 0;
+            this.btnXem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnXem.Location = new System.Drawing.Point(164, 406);
+            this.btnXem.Name = "btnXem";
+            this.btnXem.Size = new System.Drawing.Size(110, 46);
+            this.btnXem.TabIndex = 14;
+            this.btnXem.Text = "Xem";
+            this.btnXem.UseVisualStyleBackColor = false;
+            this.btnXem.Visible = false;
+            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
             // 
             // label5
             // 
@@ -143,17 +160,15 @@ namespace QuanLyNghiaTrang
             // 
             // btnNew
             // 
-            this.btnNew.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNew.BackColor = System.Drawing.SystemColors.Control;
             this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNew.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnNew.Location = new System.Drawing.Point(416, 147);
+            this.btnNew.Location = new System.Drawing.Point(38, 12);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(59, 33);
+            this.btnNew.Size = new System.Drawing.Size(119, 33);
             this.btnNew.TabIndex = 12;
-            this.btnNew.Text = "...";
+            this.btnNew.Text = "Thêm mới";
             this.btnNew.UseVisualStyleBackColor = false;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
@@ -302,9 +317,9 @@ namespace QuanLyNghiaTrang
             // 
             // dgvPhanMo
             // 
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Honeydew;
-            this.dgvPhanMo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvPhanMo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPhanMo.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvPhanMo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPhanMo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -471,11 +486,23 @@ namespace QuanLyNghiaTrang
             // panel3
             // 
             this.panel3.Controls.Add(this.lblSearch);
+            this.panel3.Controls.Add(this.btnNew);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 75);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1692, 61);
             this.panel3.TabIndex = 1;
+            // 
+            // lblSearch
+            // 
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSearch.Location = new System.Drawing.Point(506, 20);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(59, 20);
+            this.lblSearch.TabIndex = 0;
+            this.lblSearch.Text = "label6";
+            this.lblSearch.Visible = false;
             // 
             // panel2
             // 
@@ -489,6 +516,17 @@ namespace QuanLyNghiaTrang
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1692, 75);
             this.panel2.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(613, 33);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(552, 17);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Có thể tìm kiếm theo mã, số lô, số hàng, số mộ, tình trạng hoặc vị trí mộ (ví dụ:" +
+    " 1-1-11)";
             // 
             // panel1
             // 
@@ -506,46 +544,6 @@ namespace QuanLyNghiaTrang
             this.STT.MinimumWidth = 6;
             this.STT.Name = "STT";
             this.STT.Width = 125;
-            // 
-            // btnXem
-            // 
-            this.btnXem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnXem.BackColor = System.Drawing.Color.Green;
-            this.btnXem.FlatAppearance.BorderSize = 0;
-            this.btnXem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnXem.Location = new System.Drawing.Point(164, 406);
-            this.btnXem.Name = "btnXem";
-            this.btnXem.Size = new System.Drawing.Size(110, 46);
-            this.btnXem.TabIndex = 14;
-            this.btnXem.Text = "Xem";
-            this.btnXem.UseVisualStyleBackColor = false;
-            this.btnXem.Visible = false;
-            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
-            // 
-            // lblSearch
-            // 
-            this.lblSearch.AutoSize = true;
-            this.lblSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSearch.Location = new System.Drawing.Point(506, 20);
-            this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(59, 20);
-            this.lblSearch.TabIndex = 0;
-            this.lblSearch.Text = "label6";
-            this.lblSearch.Visible = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(613, 33);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(552, 17);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Có thể tìm kiếm theo mã, số lô, số hàng, số mộ, tình trạng hoặc vị trí mộ (ví dụ:" +
-    " 1-1-11)";
             // 
             // GUI_QuanLyPhanMo
             // 

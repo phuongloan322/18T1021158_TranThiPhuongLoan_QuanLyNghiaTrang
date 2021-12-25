@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DAL_Album.cs" />
     <Compile Include="DAL_Crypto.cs" />
+    <Compile Include="DAL_GopY.cs" />
     <Compile Include="DAL_LietSi.cs" />
     <Compile Include="DAL_PhanMo.cs" />
     <Compile Include="DAL_TaiKhoan.cs" />

@@ -33,16 +33,16 @@ namespace QuanLyNghiaTrang
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtTaiKhoan = new System.Windows.Forms.TextBox();
             this.lblTK = new System.Windows.Forms.Label();
             this.lblNotification = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblDangKy = new System.Windows.Forms.Label();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblDangKy = new System.Windows.Forms.Label();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -97,16 +97,6 @@ namespace QuanLyNghiaTrang
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(619, 100);
             this.panel6.TabIndex = 3;
-            // 
-            // txtMatKhau
-            // 
-            this.txtMatKhau.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Location = new System.Drawing.Point(0, 42);
-            this.txtMatKhau.Multiline = true;
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(619, 58);
-            this.txtMatKhau.TabIndex = 1;
             // 
             // label2
             // 
@@ -170,6 +160,17 @@ namespace QuanLyNghiaTrang
             this.panel3.Size = new System.Drawing.Size(776, 168);
             this.panel3.TabIndex = 2;
             // 
+            // lblDangKy
+            // 
+            this.lblDangKy.AutoSize = true;
+            this.lblDangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDangKy.Location = new System.Drawing.Point(277, 100);
+            this.lblDangKy.Name = "lblDangKy";
+            this.lblDangKy.Size = new System.Drawing.Size(217, 26);
+            this.lblDangKy.TabIndex = 2;
+            this.lblDangKy.Text = "Chưa có tài khoản?";
+            this.lblDangKy.Click += new System.EventHandler(this.lblDangKy_Click);
+            // 
             // btnDangNhap
             // 
             this.btnDangNhap.BackColor = System.Drawing.Color.SeaGreen;
@@ -199,16 +200,16 @@ namespace QuanLyNghiaTrang
             this.label1.Text = "ĐĂNG NHẬP";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblDangKy
+            // txtMatKhau
             // 
-            this.lblDangKy.AutoSize = true;
-            this.lblDangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDangKy.Location = new System.Drawing.Point(277, 100);
-            this.lblDangKy.Name = "lblDangKy";
-            this.lblDangKy.Size = new System.Drawing.Size(217, 26);
-            this.lblDangKy.TabIndex = 2;
-            this.lblDangKy.Text = "Chưa có tài khoản?";
-            this.lblDangKy.Click += new System.EventHandler(this.lblDangKy_Click);
+            this.txtMatKhau.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau.Location = new System.Drawing.Point(0, 42);
+            this.txtMatKhau.Multiline = true;
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(619, 58);
+            this.txtMatKhau.TabIndex = 1;
             // 
             // GUI_Login
             // 
@@ -239,7 +240,6 @@ namespace QuanLyNghiaTrang
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox txtTaiKhoan;
@@ -249,5 +249,6 @@ namespace QuanLyNghiaTrang
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblDangKy;
+        private System.Windows.Forms.TextBox txtMatKhau;
     }
 }

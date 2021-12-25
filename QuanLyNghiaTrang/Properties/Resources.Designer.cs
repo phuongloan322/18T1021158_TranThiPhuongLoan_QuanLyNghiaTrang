@@ -113,6 +113,46 @@ namespace QuanLyNghiaTrang.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit {
+            get {
+                object obj = ResourceManager.GetObject("exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exit__1_ {
+            get {
+                object obj = ResourceManager.GetObject("exit (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap key {
+            get {
+                object obj = ResourceManager.GetObject("key", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap padlock {
+            get {
+                object obj = ResourceManager.GetObject("padlock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap plus {
             get {
                 object obj = ResourceManager.GetObject("plus", resourceCulture);
@@ -136,6 +176,16 @@ namespace QuanLyNghiaTrang.Properties {
         internal static System.Drawing.Bitmap test {
             get {
                 object obj = ResourceManager.GetObject("test", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user__1_ {
+            get {
+                object obj = ResourceManager.GetObject("user (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

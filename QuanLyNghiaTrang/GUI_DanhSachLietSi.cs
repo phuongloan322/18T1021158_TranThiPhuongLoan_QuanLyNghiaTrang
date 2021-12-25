@@ -75,10 +75,18 @@ namespace QuanLyNghiaTrang
                 if(vitri.Length == 3)
                 {
                     long MaPhanMo = busPhanMo.getMaPhanMo(int.Parse(vitri[0]), int.Parse(vitri[1]), int.Parse(vitri[2]));
-                    dgvLietSi.DataSource = busLietSi.getLietSi(HoVaTen, NgaySinh, NgayHySinh, QueQuan, MaPhanMo);
-                    int soHang = dgvLietSi.Rows.Count - 1;
-                    lblSearch.Text = "Kết quả tìm kiếm: " + soHang + " liệt sĩ";
-                    lblSearch.Visible = true;
+                    if(MaPhanMo != 0)
+                    {
+                        dgvLietSi.DataSource = busLietSi.getLietSi(HoVaTen, NgaySinh, NgayHySinh, QueQuan, MaPhanMo);
+                        int soHang = dgvLietSi.Rows.Count - 1;
+                        lblSearch.Text = "Kết quả tìm kiếm: " + soHang + " liệt sĩ";
+                        lblSearch.Visible = true;
+                    }
+                    else
+                    {
+                        LoadData("");
+                        MessageBox.Show("Không tìm thấy kết quả!", "Info");
+                    }   
                 }
                 else 
                 {
@@ -204,6 +212,7 @@ namespace QuanLyNghiaTrang
         public void LoadForm()
         {
             cmbQuyTap.Items.Add("Đã quy tập");
+            cmbQuyTap.Items.Add("Chưa quy tập");
             cmbQuyTap.Text = "Chưa quy tập";
 
             DataTable dataPhanMo = busPhanMo.getPhanMo("Còn trống");
@@ -241,7 +250,7 @@ namespace QuanLyNghiaTrang
             string maXoa = lblMa.Text;
             if (maXoa != null || maXoa == "")
             {
-                DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn xóa liệt sĩ số " + maXoa + " không?", "Xác nhận", MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn xóa liệt sĩ " + txtHoTen.Text + " không?", "Xác nhận", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     int rs = busLietSi.deleteLietSi(long.Parse(maXoa));

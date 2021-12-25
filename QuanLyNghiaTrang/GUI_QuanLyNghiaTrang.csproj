@@ -104,11 +104,23 @@
     <Compile Include="GUI_Main.Designer.cs">
       <DependentUpon>GUI_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_QuanLyGopY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLyGopY.Designer.cs">
+      <DependentUpon>GUI_QuanLyGopY.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_QuanLyPhanMo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI_QuanLyPhanMo.Designer.cs">
       <DependentUpon>GUI_QuanLyPhanMo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_QuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>GUI_QuanLyTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_ThemLietSi.cs">
       <SubType>Form</SubType>
@@ -156,8 +168,14 @@
     <EmbeddedResource Include="GUI_Main.resx">
       <DependentUpon>GUI_Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_QuanLyGopY.resx">
+      <DependentUpon>GUI_QuanLyGopY.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_QuanLyPhanMo.resx">
       <DependentUpon>GUI_QuanLyPhanMo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_QuanLyTaiKhoan.resx">
+      <DependentUpon>GUI_QuanLyTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_ThemLietSi.resx">
       <DependentUpon>GUI_ThemLietSi.cs</DependentUpon>
@@ -228,6 +246,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

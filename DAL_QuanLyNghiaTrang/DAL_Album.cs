@@ -80,26 +80,6 @@ namespace DAL_QuanLyNghiaTrang
             con.Close();
             return true;
         }
-
-        /*public bool deleteAlbum(string MaAlbum)
-        {
-            return true;
-            String st = String.Format("delete AlbumAnh where MaAlbum = N'{0}' ", MaAlbum);
-            try
-            {
-                con.Open();
-                SqlCommand cmd = new SqlCommand(st, con);
-                cmd.ExecuteNonQuery();
-            }
-            catch
-            {
-                con.Close();
-                return false;
-            }
-            con.Close();
-            return true;
-        }
-*/
         public int deleteAlbum(string MaAlbum)
         {
             string sql = "EXEC proc_Album_Xoa @MaAlbum, @Result OUT";

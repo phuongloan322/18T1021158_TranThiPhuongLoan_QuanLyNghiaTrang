@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BUS_Album.cs" />
     <Compile Include="BUS_Crypto.cs" />
+    <Compile Include="BUS_GopY.cs" />
     <Compile Include="BUS_LietSi.cs" />
     <Compile Include="BUS_PhanMo.cs" />
     <Compile Include="BUS_TaiKhoan.cs" />

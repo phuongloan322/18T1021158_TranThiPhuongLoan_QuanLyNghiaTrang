@@ -16,7 +16,7 @@ namespace QuanLyNghiaTrang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI_DangKy());
+            Application.Run(new GUI_Login());
         }
     }
 }
