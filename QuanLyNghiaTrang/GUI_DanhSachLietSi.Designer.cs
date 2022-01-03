@@ -29,7 +29,7 @@ namespace QuanLyNghiaTrang
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -129,8 +129,11 @@ namespace QuanLyNghiaTrang
             // 
             // dgvLietSi
             // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Honeydew;
-            this.dgvLietSi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Honeydew;
+            this.dgvLietSi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvLietSi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvLietSi.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvLietSi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLietSi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -149,13 +152,12 @@ namespace QuanLyNghiaTrang
             this.SoLo,
             this.SoHang,
             this.SoMo});
-            this.dgvLietSi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvLietSi.Location = new System.Drawing.Point(0, 0);
             this.dgvLietSi.Name = "dgvLietSi";
             this.dgvLietSi.RowHeadersVisible = false;
             this.dgvLietSi.RowHeadersWidth = 51;
             this.dgvLietSi.RowTemplate.Height = 32;
-            this.dgvLietSi.Size = new System.Drawing.Size(1015, 584);
+            this.dgvLietSi.Size = new System.Drawing.Size(1015, 554);
             this.dgvLietSi.TabIndex = 0;
             this.dgvLietSi.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLietSi_CellValueChanged);
             this.dgvLietSi.Click += new System.EventHandler(this.dgvLietSi_Click);

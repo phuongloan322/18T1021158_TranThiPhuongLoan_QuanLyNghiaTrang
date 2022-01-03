@@ -67,9 +67,9 @@ namespace QuanLyNghiaTrang
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(1206, 20);
+            this.panel3.Location = new System.Drawing.Point(1141, 20);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(508, 576);
+            this.panel3.Size = new System.Drawing.Size(573, 576);
             this.panel3.TabIndex = 7;
             // 
             // label7
@@ -120,7 +120,7 @@ namespace QuanLyNghiaTrang
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(267, 25);
             this.label2.TabIndex = 25;
-            this.label2.Text = "Khu vực 1: Bia ghi danh liệt sĩ";
+            this.label2.Text = "Khu vực 2: Bia ghi danh liệt sĩ";
             // 
             // label1
             // 
@@ -152,7 +152,8 @@ namespace QuanLyNghiaTrang
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(24, 20);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1176, 678);
+            this.pictureBox1.Size = new System.Drawing.Size(1111, 678);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 

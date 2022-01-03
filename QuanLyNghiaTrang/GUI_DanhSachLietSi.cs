@@ -84,8 +84,8 @@ namespace QuanLyNghiaTrang
                     }
                     else
                     {
-                        LoadData("");
-                        MessageBox.Show("Không tìm thấy kết quả!", "Info");
+                        MessageBox.Show("Không tìm thấy kết quả!", "Info"); 
+                        Reset();
                     }   
                 }
                 else 
@@ -95,10 +95,19 @@ namespace QuanLyNghiaTrang
             }
             else
             {
-                dgvLietSi.DataSource = busLietSi.getLietSi(HoVaTen, NgaySinh, NgayHySinh, QueQuan, 0);
-                int soHang = dgvLietSi.Rows.Count - 1;
-                lblSearch.Text = "Kết quả tìm kiếm: " + soHang + " liệt sĩ";
-                lblSearch.Visible = true;
+                DataTable dataSearch = busLietSi.getLietSi(HoVaTen, NgaySinh, NgayHySinh, QueQuan, 0);
+                dgvLietSi.DataSource = dataSearch;
+                if(dataSearch.Rows.Count == 0)
+                {
+                    MessageBox.Show("Không tìm thấy kết quả!", "Info");
+                    Reset();
+                }
+                else
+                {
+                    int soHang = dgvLietSi.Rows.Count - 1;
+                    lblSearch.Text = "Kết quả tìm kiếm: " + soHang + " liệt sĩ";
+                    lblSearch.Visible = true; 
+                }
             }
             ResetSearch();
         }
@@ -200,6 +209,7 @@ namespace QuanLyNghiaTrang
             txtDonVi.Text = "";
             cmbViTriMo.Text = "";
             pnlTT.Enabled = false;
+            lblSearch.Text = "";
         }
 
         private void btnThem_Click(object sender, EventArgs e)

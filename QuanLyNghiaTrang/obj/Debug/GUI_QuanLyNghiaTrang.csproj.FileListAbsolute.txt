@@ -46,4 +46,3 @@ C:\Users\Admin\source\repos\QuanLyNghiaTrang\QuanLyNghiaTrang\bin\Debug\EasyEncr
 C:\Users\Admin\source\repos\QuanLyNghiaTrang\QuanLyNghiaTrang\obj\Debug\QuanLyNghiaTrang.GUI_DangKy.resources
 C:\Users\Admin\source\repos\QuanLyNghiaTrang\QuanLyNghiaTrang\obj\Debug\QuanLyNghiaTrang.GUI_QuanLyGopY.resources
 C:\Users\Admin\source\repos\QuanLyNghiaTrang\QuanLyNghiaTrang\obj\Debug\QuanLyNghiaTrang.GUI_QuanLyTaiKhoan.resources
-C:\Users\Admin\source\repos\QuanLyNghiaTrang\QuanLyNghiaTrang\obj\Debug\QuanLyNghiaTrang.GUI_Test.resources

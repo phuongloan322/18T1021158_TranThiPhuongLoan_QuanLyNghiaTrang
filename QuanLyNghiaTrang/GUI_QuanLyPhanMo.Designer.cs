@@ -29,13 +29,12 @@ namespace QuanLyNghiaTrang
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pnlTT = new System.Windows.Forms.Panel();
             this.btnXem = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.btnThem = new System.Windows.Forms.Button();
-            this.btnNew = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnLuu = new System.Windows.Forms.Button();
             this.cmbTinhTrang = new System.Windows.Forms.ComboBox();
@@ -46,6 +45,7 @@ namespace QuanLyNghiaTrang
             this.txtSoMo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnNew = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -157,20 +157,6 @@ namespace QuanLyNghiaTrang
             this.btnThem.Text = "THÊM";
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnNew
-            // 
-            this.btnNew.BackColor = System.Drawing.SystemColors.Control;
-            this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnNew.Location = new System.Drawing.Point(38, 12);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(119, 33);
-            this.btnNew.TabIndex = 12;
-            this.btnNew.Text = "Thêm mới";
-            this.btnNew.UseVisualStyleBackColor = false;
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // label2
             // 
@@ -286,6 +272,20 @@ namespace QuanLyNghiaTrang
             this.label4.TabIndex = 6;
             this.label4.Text = "Tình trạng";
             // 
+            // btnNew
+            // 
+            this.btnNew.BackColor = System.Drawing.SystemColors.Control;
+            this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNew.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnNew.Location = new System.Drawing.Point(38, 12);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(119, 33);
+            this.btnNew.TabIndex = 12;
+            this.btnNew.Text = "Thêm mới";
+            this.btnNew.UseVisualStyleBackColor = false;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.panel7);
@@ -317,9 +317,11 @@ namespace QuanLyNghiaTrang
             // 
             // dgvPhanMo
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvPhanMo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Honeydew;
+            this.dgvPhanMo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPhanMo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvPhanMo.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvPhanMo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPhanMo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -329,13 +331,12 @@ namespace QuanLyNghiaTrang
             this.Hang,
             this.Mo,
             this.TinhTrang});
-            this.dgvPhanMo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPhanMo.Location = new System.Drawing.Point(0, 0);
             this.dgvPhanMo.Name = "dgvPhanMo";
             this.dgvPhanMo.RowHeadersVisible = false;
             this.dgvPhanMo.RowHeadersWidth = 51;
             this.dgvPhanMo.RowTemplate.Height = 32;
-            this.dgvPhanMo.Size = new System.Drawing.Size(1119, 662);
+            this.dgvPhanMo.Size = new System.Drawing.Size(1119, 623);
             this.dgvPhanMo.TabIndex = 0;
             this.dgvPhanMo.Click += new System.EventHandler(this.dgvPhanMo_Click);
             // 

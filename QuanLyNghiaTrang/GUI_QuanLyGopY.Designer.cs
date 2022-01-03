@@ -31,6 +31,7 @@ namespace QuanLyNghiaTrang
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
@@ -67,7 +68,6 @@ namespace QuanLyNghiaTrang
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -90,6 +90,21 @@ namespace QuanLyNghiaTrang
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(67, 659);
             this.panel8.TabIndex = 0;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button2.BackgroundImage = global::QuanLyNghiaTrang.Properties.Resources.circle_of_two_clockwise_arrows_rotation;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(13, 65);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(43, 34);
+            this.button2.TabIndex = 13;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnXoa
             // 
@@ -214,6 +229,9 @@ namespace QuanLyNghiaTrang
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Honeydew;
             this.dgvGopY.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvGopY.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvGopY.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvGopY.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGopY.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -223,13 +241,12 @@ namespace QuanLyNghiaTrang
             this.NguoiGopY,
             this.NgayGui,
             this.XuLy});
-            this.dgvGopY.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvGopY.Location = new System.Drawing.Point(0, 0);
             this.dgvGopY.Name = "dgvGopY";
             this.dgvGopY.RowHeadersVisible = false;
             this.dgvGopY.RowHeadersWidth = 51;
             this.dgvGopY.RowTemplate.Height = 32;
-            this.dgvGopY.Size = new System.Drawing.Size(721, 659);
+            this.dgvGopY.Size = new System.Drawing.Size(721, 631);
             this.dgvGopY.TabIndex = 0;
             this.dgvGopY.Click += new System.EventHandler(this.dgvGopY_Click);
             // 
@@ -499,21 +516,6 @@ namespace QuanLyNghiaTrang
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1294, 795);
             this.panel1.TabIndex = 2;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.BackgroundImage = global::QuanLyNghiaTrang.Properties.Resources.circle_of_two_clockwise_arrows_rotation;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(13, 65);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(43, 34);
-            this.button2.TabIndex = 13;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // GUI_QuanLyGopY
             // 

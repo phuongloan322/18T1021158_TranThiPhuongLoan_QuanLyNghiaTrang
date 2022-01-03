@@ -262,5 +262,17 @@
   <ItemGroup>
     <None Include="Resources\key.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ttxvn_doan_cong_tac_bo_lao_dong_thuong_binh_va_xa_hoi_vieng_nghia_trang_liet_sy_quoc_gia_truong_son_203045410_3967090.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ttxvn_doan_cong_tac_bo_lao_dong_thuong_binh_va_xa_hoi_vieng_nghia_trang_liet_sy_quoc_gia_truong_son_203045410_3967090 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ttxvn_doan_cong_tac_bo_lao_dong_thuong_binh_va_xa_hoi_vieng_nghia_trang_liet_sy_quoc_gia_truong_son_203045410_3967090 %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ttxvn_doan_cong_tac_bo_lao_dong_thuong_binh_va_xa_hoi_vieng_nghia_trang_liet_sy_quoc_gia_truong_son_203045410_3967090 %284%29.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

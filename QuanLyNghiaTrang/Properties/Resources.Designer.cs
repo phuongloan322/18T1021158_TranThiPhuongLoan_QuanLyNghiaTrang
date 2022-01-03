@@ -183,6 +183,50 @@ namespace QuanLyNghiaTrang.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ttxvn_doan_cong_tac_bo_lao_dong_thuong_binh_va_xa_hoi_vieng_nghia_trang_liet_sy_quoc_gia_truong_son_203045410_3967090 {
+            get {
+                object obj = ResourceManager.GetObject("ttxvn_doan_cong_tac_bo_lao_dong_thuong_binh_va_xa_hoi_vieng_nghia_trang_liet_sy_q" +
+                        "uoc_gia_truong_son_203045410_3967090", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ttxvn_doan_cong_tac_bo_lao_dong_thuong_binh_va_xa_hoi_vieng_nghia_trang_liet_sy_quoc_gia_truong_son_203045410_3967090__2_ {
+            get {
+                object obj = ResourceManager.GetObject("ttxvn_doan_cong_tac_bo_lao_dong_thuong_binh_va_xa_hoi_vieng_nghia_trang_liet_sy_q" +
+                        "uoc_gia_truong_son_203045410_3967090 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ttxvn_doan_cong_tac_bo_lao_dong_thuong_binh_va_xa_hoi_vieng_nghia_trang_liet_sy_quoc_gia_truong_son_203045410_3967090__3_ {
+            get {
+                object obj = ResourceManager.GetObject("ttxvn_doan_cong_tac_bo_lao_dong_thuong_binh_va_xa_hoi_vieng_nghia_trang_liet_sy_q" +
+                        "uoc_gia_truong_son_203045410_3967090 (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ttxvn_doan_cong_tac_bo_lao_dong_thuong_binh_va_xa_hoi_vieng_nghia_trang_liet_sy_quoc_gia_truong_son_203045410_3967090__4_ {
+            get {
+                object obj = ResourceManager.GetObject("ttxvn_doan_cong_tac_bo_lao_dong_thuong_binh_va_xa_hoi_vieng_nghia_trang_liet_sy_q" +
+                        "uoc_gia_truong_son_203045410_3967090 (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap user__1_ {
             get {
                 object obj = ResourceManager.GetObject("user (1)", resourceCulture);

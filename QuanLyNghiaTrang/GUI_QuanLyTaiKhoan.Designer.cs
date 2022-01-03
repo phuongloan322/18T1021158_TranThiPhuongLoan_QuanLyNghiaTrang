@@ -46,7 +46,6 @@ namespace QuanLyNghiaTrang
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.txtTenDangNhap = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtHoVaTen = new System.Windows.Forms.TextBox();
@@ -82,7 +81,6 @@ namespace QuanLyNghiaTrang
             this.panel3.Controls.Add(this.lblNotification);
             this.panel3.Controls.Add(this.btnSave);
             this.panel3.Controls.Add(this.panelChangePassword);
-            this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.txtTenDangNhap);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.txtHoVaTen);
@@ -99,7 +97,7 @@ namespace QuanLyNghiaTrang
             this.lblNotification.AutoSize = true;
             this.lblNotification.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNotification.ForeColor = System.Drawing.Color.Red;
-            this.lblNotification.Location = new System.Drawing.Point(15, 520);
+            this.lblNotification.Location = new System.Drawing.Point(19, 458);
             this.lblNotification.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNotification.Name = "lblNotification";
             this.lblNotification.Size = new System.Drawing.Size(64, 25);
@@ -115,7 +113,7 @@ namespace QuanLyNghiaTrang
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSave.Location = new System.Drawing.Point(15, 589);
+            this.btnSave.Location = new System.Drawing.Point(18, 502);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(549, 58);
@@ -134,7 +132,7 @@ namespace QuanLyNghiaTrang
             this.panelChangePassword.Controls.Add(this.label9);
             this.panelChangePassword.Controls.Add(this.label8);
             this.panelChangePassword.Controls.Add(this.label7);
-            this.panelChangePassword.Location = new System.Drawing.Point(17, 229);
+            this.panelChangePassword.Location = new System.Drawing.Point(21, 182);
             this.panelChangePassword.Margin = new System.Windows.Forms.Padding(4);
             this.panelChangePassword.Name = "panelChangePassword";
             this.panelChangePassword.Size = new System.Drawing.Size(568, 272);
@@ -291,24 +289,12 @@ namespace QuanLyNghiaTrang
             this.label7.TabIndex = 12;
             this.label7.Text = "Mật khẩu cũ";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(12, 2);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(220, 26);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Thông tin Tài khoản";
-            // 
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDangNhap.Location = new System.Drawing.Point(16, 176);
+            this.txtTenDangNhap.Location = new System.Drawing.Point(20, 129);
             this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenDangNhap.Multiline = true;
             this.txtTenDangNhap.Name = "txtTenDangNhap";
@@ -321,7 +307,7 @@ namespace QuanLyNghiaTrang
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(12, 147);
+            this.label4.Location = new System.Drawing.Point(16, 100);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(141, 24);
@@ -333,7 +319,7 @@ namespace QuanLyNghiaTrang
             this.txtHoVaTen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHoVaTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoVaTen.Location = new System.Drawing.Point(16, 86);
+            this.txtHoVaTen.Location = new System.Drawing.Point(20, 39);
             this.txtHoVaTen.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoVaTen.Multiline = true;
             this.txtHoVaTen.Name = "txtHoVaTen";
@@ -345,7 +331,7 @@ namespace QuanLyNghiaTrang
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(12, 58);
+            this.label3.Location = new System.Drawing.Point(16, 11);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 24);
@@ -380,7 +366,7 @@ namespace QuanLyNghiaTrang
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GUI_QuanLyTaiKhoan";
-            this.Text = "GUI_QuanLyTaiKhoan";
+            this.Text = "jo";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -421,7 +407,6 @@ namespace QuanLyNghiaTrang
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtTenDangNhap;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtHoVaTen;
